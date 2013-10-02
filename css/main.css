@@ -18,6 +18,12 @@ header{
 	border-top: 3px solid #000000;
 	display: block; /* Only for IE8 or less */
 }
+
+#sitebranding{
+	background: #eee;
+	margin: 5px;
+	padding: 5px;
+}
 	
 
 nav{
