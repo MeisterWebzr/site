@@ -1,0 +1,74 @@
+body{
+	width: 960px;
+	height: auto;
+	margin: 10px;
+	padding: 10px;
+	border: 1px dotted black;
+    text-align: justify;
+	
+}
+
+p{	
+	margin: 5px;
+	padding: 5px;
+	
+}
+
+header{
+	border-top: 3px solid #000000;
+	display: block; /* Only for IE8 or less */
+}
+	
+
+nav{
+	width: 180px;
+	height: 150px;
+	background: #eee;
+	display: block; /* Only for IE8 or less */ 
+}
+	
+nav ul{
+	margin: 0;
+	padding-top: 15px;
+	list-style: none;
+}
+
+#image1{
+	padding: 5px;
+	margin: 5px;
+	border: 1px dotted blue;
+	width: 300px;
+	height: auto;
+}
+
+aside{
+	display: block;
+	float: right;
+	margin: 10px;
+	padding: 10px;
+	width: 30%;
+	background: black;
+	font-style: italic;
+	color: silver;
+}
+
+aside blockquote{
+	font-size: 1.2em;
+	line-height: 1.4;
+	margin: 0 0 0.5em 0;
+	font-style: normal;
+	color: #eee;
+}
+
+footer{
+		border-bottom: 3px solid #000000;
+		display: block; /* Only for IE8 or less */
+		background: #eee;
+}
+
+footer ul{
+	list-style: none;
+}
+	
+	
+	
