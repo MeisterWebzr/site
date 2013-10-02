@@ -1,0 +1,1778 @@
+bplist00Ò+_WebSubresources_WebMainResource§!&Ô	
+_WebResourceData_WebResourceMIMEType^WebResourceURL_WebResourceResponseO3W/*!
+   Base Style Sheet for the W3C Markup Validation Service.
+
+   Copyright 2000-2006 W3C (MIT, INRIA, Keio). All Rights Reserved.
+   See http://www.w3.org/Consortium/Legal/ipr-notice.html#Copyright
+*/
+
+/* @group Reset */
+
+html, body, form, fieldset, p, a, ul, ol, li, div, legend, label,
+br, input, button, textarea, h1, h2, h3, h4, h5, strong {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	font-family: Helvetica, Arial, Sans-Serif;
+	vertical-align: baseline;
+	background-color: white;
+	color: #1f2126;
+	line-height: 1;
+	text-align: left;
+}
+
+a img {
+	border: 0;
+}
+
+a:link, a:visited {
+	text-decoration: underline;
+	color: #365D95;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #1f2126;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+abbr[title], acronym[title], span[title], strong[title] {
+	border-bottom: thin dotted;
+	cursor: help;
+}
+
+acronym:hover, abbr:hover {
+	cursor: help;
+}
+
+/* @end */
+
+/* @group Basics */
+
+body {
+	padding-bottom: 6em;
+	min-width: 40em; /* for the tabs, mostly */
+}
+
+p {
+  line-height: 130%;   
+}
+
+strong { 
+  font-weight: bold;
+}
+
+h2 { 
+    color: #690;
+    font-family:Verdana,Arial,sans-serif;
+    background-color: white;
+    font-size: 1.3em;
+    margin-bottom: 1em;    
+}
+
+h3 {
+    font-family:Verdana,Arial,sans-serif;
+    color: #690;
+    background-color: white;
+    font-size: 1.1em;
+    border-bottom: 1px dotted #aaaa77;
+    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+} 
+
+h4 {
+    font-family:Verdana,Arial,sans-serif;
+    color: #690;
+    font-style: italic;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight:600;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+h5,h6 {
+    font-family:Verdana,Arial,sans-serif;
+    color: #690;
+    background-color: white;
+    font-weight: normal;
+    font-size: small;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: .7em;
+    }
+
+    /* tables in the documentation */
+
+    table {
+    }
+    td, th{
+    	padding: 6px;
+    }
+    
+/* @end */
+
+
+/* @group Inputs */
+
+div#frontforms input {
+    /* default for radio and checkbox. Others will be handled directly */
+    background-color: #EAEBEE;
+}
+
+input#uri, input#file, input#uploaded_file, input#keywords, input#short_desc, textarea {
+	font-family: Monaco, "Courier New", Monospace;
+	font-size: 0.9em;
+	border: 1px solid #bbb;
+	border-top: 1px solid #777;
+	border-bottom: 1px solid #ddd;
+	background: #fefefe url(../images/textbg.png) no-repeat top left;
+	padding: 0.2em 0.2em;
+	max-width: 1000px;
+	font-variant: normal;
+}
+
+input#uri, input#file, input#uploaded_file {
+	width: 85%;
+	margin: 0.3em 0 0 1em;
+}
+
+input#file, input#uploaded_file {
+	width: 30em;
+}
+
+input#mailsearch, input#bugsearch {
+    background-color: #EAEBEE;
+    color: #365D95;
+    padding: .3em 1em;
+    border: 1px outset #ccc;
+  }
+  input#mailsearch:active, input#bugsearch:active {
+    border-style: inset !important;
+  }
+a.submit {
+	display: block;
+	width: 10em;
+	text-align: center;
+	margin: 0 auto;
+	background: url(../images/button-left.png) no-repeat center left;
+	text-decoration: none;
+}
+
+a.submit span {
+	display: block;
+	padding: 1.2em 2em;
+	background: url(../images/button-right.png) no-repeat center right;
+}
+
+textarea {
+	width: 98.5%;
+}
+
+p.submit_button input {
+	overflow: visible;
+	width: auto;
+	background: #fff;
+  color: #365D95;
+  padding: 0.3em 0.4em 0.1em 0.3em;
+	font-size: 1.2em;
+	width: 12em;
+	text-align: center;
+	border-bottom: 2px solid #444;
+	border-right: 2px solid #444;
+	border-top: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	background: #eee url(../images/grad.png) repeat-x top left;
+	cursor: pointer;
+}
+
+p.submit_button input:active {
+  color: #1f2126;
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-top: 2px solid #444;
+	border-left: 2px solid #444;
+}
+
+label {
+	font-size: 0.9em;
+	padding-left: .2em;
+	padding-right: .2em;
+}
+
+div.options select {
+	margin-right: 0.8em;
+}
+
+div.options label {
+	margin-right: 0.3em;
+}
+
+
+div.options table, div.options tbody, div.options td, div.options th, div.options tr {
+	margin: 0;
+	padding: 0;
+}
+
+div.options table {
+	border-collapse: collapse;
+}
+
+div.options th, div.options th label {
+	font-weight: bold;
+}
+
+div.options td, div.options th {
+	padding: 0.5em 1.1em 0.5em 0;
+	text-align: left;
+}
+
+div.options td input {
+	margin-right: 0.2em;
+}
+
+div.options select {
+	width: 100%;
+}
+
+div.options table tr.subchoice th {
+    padding-left: 3em;
+}
+tr.subchoice th label {
+  padding-left: 0;
+}
+tr.subchoice th, tr.subchoice th label {
+  font-size: 1em;
+  font-weight: normal;
+}
+/* @end */
+
+/* @group Header */
+
+h1#title {
+	font-family: "Myriad Web", "Myriad Pro", "Gill Sans", Helvetica, Arial, Sans-Serif;
+	background-color: #365D95;
+	color: #fdfdfd;
+	font-size: 1.6em;
+	background: url(../images/head-bl.png) bottom left no-repeat;
+	padding-bottom: 0.430em;
+}
+h1#title a, h1#title a img {
+background-color: #365D95;
+}
+
+h1 span {
+	border-bottom: 1px solid #6383b1;
+	border-color: #4e6f9e;
+}
+
+h1#title a:link, h1#title a:hover, h1#title a:visited, h1#title a:active {
+  color: #fdfdfd !important;
+  text-decoration: none;
+}
+
+h1#title img {
+	vertical-align: middle;
+	margin-right: 0.7em;
+}
+
+div#banner {
+	background: #365D95 url(../images/head-br.png) bottom right no-repeat;
+	margin: 1.5em 2em;
+}
+
+p#tagline {
+	font-size: 0.7em;
+	margin: -2em 0 0 12.1em;
+	padding-bottom: 1em;
+	letter-spacing: 0.1em;
+	line-height: 100% !important;
+	color: #D0DCEE;
+	background-color: transparent;
+}
+
+ul#lang_choice {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 0.7em;
+	padding: 0.8em 0;
+	margin-right: 3.3em;
+}
+
+ul#lang_choice a:link, ul#lang_choice a:visited {
+	text-decoration: none;
+}
+
+ul#lang_choice a:hover, ul#lang_choice a:active {
+	text-decoration: underline;
+}
+
+ul#lang_choice li {
+	display: inline;
+	padding-left: 0.5em;
+}
+
+/* @end */
+
+/* @group Tabs */
+
+ul#tabset_tabs {
+	height: 1.59em;
+}
+
+ul#tabset_tabs li {
+	cursor: pointer;
+	float: left;
+	margin-right: 0.245em;
+	background: #DADDE3 url(../images/tab-tl.png) no-repeat top left;
+	border-bottom: 1px solid #CBD0DB;
+}
+
+ul#tabset_tabs li.selected {
+	background: #EAEBEE url(../images/round-tl.png) no-repeat top left;
+	border-bottom: 1px solid #EAEBEE;
+}
+
+ul#tabset_tabs li.selected a:link, ul#tabset_tabs li.selected a:visited {
+	color: #1f2126;
+	background: #EAEBEE url(../images/round-tr.png) no-repeat top right;
+}
+
+ul#tabset_tabs li span {
+	color: #616571;
+}
+
+body ul#tabset_tabs li.selected a span {
+	color: #3d424f;
+}
+
+ul#tabset_tabs li a:link, ul#tabset_tabs li a:visited {
+	color: #365D95;
+	display: block;
+	padding: 0.515em 1.3em 0.215em 0.8em;
+	background: #DADDE3 url(../images/tab-tr.png) no-repeat top right;
+	margin-left: 0.5em;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul#tabset_tabs li a:hover, ul#tabset_tabs li a:active {
+	color: #1f2126;
+}
+
+ul#tabset_tabs li a:hover span, ul#tabset_tabs li a:active span {
+	color: #3d424f;
+}
+
+ul#tabset_tabs li.selected span {
+	color: #5d6371;
+}
+
+/* @end */
+
+/* @group Contents */
+
+div#frontforms {
+	background: #fff;
+	padding: 0 2em;
+}
+
+div#fields {
+	clear: both;
+	background: #EAEBEE url(../images/round-tr.png) no-repeat top right;
+	padding: 0.5em 1.3em;
+	border-bottom: 1px solid #DCDDE0;
+}
+
+div#fields legend, div#fields p, div#fields p strong, div#fields p a, div#fields fieldset, div#fields form,div#fields form fieldset legend a, div#fields form p label, div#fields tr label   {
+  background-color: #EAEBEE;
+}
+
+fieldset {
+	background: #EAEBEE;
+}
+
+legend {
+	font-size: 1.1em;
+	padding: 1em 0 0.23em;
+	letter-spacing: 0.06em;
+}
+
+legend a:link, legend a:visited, legend a:hover, legend a:active {
+	text-decoration: none;
+}
+
+legend.toggletext {
+	cursor: pointer;
+	padding-left: 0.2em;
+}
+legend.toggletext img {
+    padding-bottom: 2px;
+    
+}
+img.toggled { 
+padding-bottom: 4px;    
+}
+
+p.instructions {
+	color: #4D525E;
+	font-size: 0.80em;
+	padding-bottom: 1em;
+	padding-top: 0.5em;
+}
+
+p.instructions label {
+	color: #4D525E;
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+}
+
+div.options {
+	padding: 0.7em 0 0.5em 1em;
+}
+
+div.options, p.submit_button, p.instructions, p#note {
+	border-top: 1px solid #cbcdd5;
+	background: #EAEBEE url(../images/double.png) left top repeat-x;
+}
+
+p.submit_button {
+	padding: 0.6em 0 0;
+	margin: 0;
+	text-align: center;
+}
+
+
+p#note {
+	clear: both;
+	color: #4D525E;
+	font-size: 0.9em;
+	padding: 0.5em 0 0.1em;
+}
+
+/* @end */
+
+/* @group Menu */
+
+ul#menu {
+	text-align: center;
+	margin: 1em 2em;
+	background: #EAEBEE url(../images/round-br.png) no-repeat bottom right;
+	padding: 0.5em 0 0.3em;
+	border-top: 1px solid #DCDDE0;
+}
+
+ul#menu span {
+	display: none;
+}
+
+ul#menu a:link, ul#menu a:visited {
+	background: #EAEBEE;
+	color: #365D95;
+	text-decoration: none;
+}
+
+ul#menu a:hover, ul#menu a:active {
+	color: #1f2126;
+	text-decoration: underline;
+}
+
+ul#menu li {
+	display: inline;
+	margin-right: 0.8em;
+}
+
+
+
+/* @end */
+
+/* @group Footer */
+
+div#footer {
+	padding: 0 2em;
+}
+
+p#activity_logos {
+	float: left;
+	padding-right: 2em;
+	margin-top: .6em;
+}
+
+p#support_logo {
+	float: right;
+	font-size: 0.8em;
+	text-align: center;
+	padding-left: 2em;
+	padding-top: 1.8em;
+	width: 90px;
+    height: 100px;
+}
+
+p.copyright {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	line-height: 1.4;
+}
+
+p.copyright, p.copyright a {
+	text-decoration: none;
+	color: #7C8395;
+}
+
+p.copyright a:link, p.copyright a:visited {
+	color: #A3756E;
+}
+
+p.copyright a:hover, p.copyright a:active {
+	color: #7D4A42;
+}
+
+p#version_info {
+    font-size:      small;
+    text-align: center;
+    color: #888;
+    background-color: white;
+}
+
+/* @end */
+
+/* @group Docs */
+
+div.doc {
+  margin: 1em 2em;
+	padding: 0.5em 0 0.3em;	  
+}
+
+
+/* Set line height to 1.4x (from 1.3x on general site) to allow for various inline decoration. */
+div.doc p, div.doc li {
+  line-height: 150% !important; 
+}
+div.doc p {
+  margin-bottom: .7em;
+  margin-top: .5em;
+}
+
+div.doc p, div.doc dt, div.doc ul, div.doc ol {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+div.doc ul li {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+
+/* documentation - table of contents */
+#toc { /* making the toc a bit more compact and standing out */
+    font-size: .85em;
+    font-weight: bold;
+    margin-bottom: 2em;
+    margin-left: 3em;
+}
+
+div.doc div#toc ol, div.doc ol {
+   list-style-type: decimal;
+}
+div.doc div#toc ol li {
+  line-height: 130%;
+  font-weight: bold;
+}
+div.doc div#toc ol li ol {
+   list-style-type: lower-alpha;
+   font-weight: normal;
+   margin-left: 1em;
+}
+div.doc div#toc ol li ol li ol{
+   list-style-type: lower-roman;
+}
+
+
+/* documentation - error explanations */
+dl#expl dt code { /* headings for an error */
+  white-space: normal;
+  font-weight: bold;
+}
+
+dl#expl dt {
+  border-top: 1px dashed black;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+div.doc dt {
+  margin-top: 1.2em;
+  margin-bottom: .2em;
+}
+div.doc dt, div.doc dt a {
+  font-style: italic;
+}
+div.doc dd {
+  margin-right: 0; /* no need for the extra margin if we nicely put the text of the dd in a paragraph */
+}
+div.doc var { /* headings for an error */
+  color: #006;
+}
+
+/* A snippet of code used inline. */
+div.doc code {
+  white-space: normal;
+  display: inline;
+  padding-left: .2em;
+  padding-right: .2em;
+  color:      black;
+  font-family: Monaco, "Courier New", monospace;
+  border: 1px dotted #ccc;
+}
+
+div.doc code.block {
+  display: block;
+  padding: 1em;
+  white-space: pre;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right:  3em;
+}
+
+div.doc pre {
+    margin-left: 5em;
+    padding-left: 2em;
+    line-height: 150%;
+    border-left: 1px solid #690;
+    
+}
+
+div.doc code samp {
+  font-weight: normal;
+  color: black;
+  font-style: italic;
+}
+
+/* reference tables */
+
+div.doc table {
+	border-collapse: collapse;
+	border-right: 1px solid #ccc;
+}
+div.doc table td, .doc table th{
+	border-top: 0px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #eee;
+	padding: 6px;
+	border-collapse: collapse;
+}
+div.doc table th {
+	background-color: #eee;
+	color: #11111A;
+	border-right: 1px solid #ccc;
+}
+
+div.doc table {
+  margin-top: 1em;
+  margin-bottom: .5em;
+ 	border-collapse: collapse;
+	border-right: 1px solid #ccc; 
+}
+
+div.doc td, div.doc th {
+	border-top: 0px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #eee;
+	border-collapse: collapse;
+  
+}
+div.doc th {
+	background-color: #eee;
+	color: #11111A;
+	border-right: 1px solid #ccc;
+}
+
+/* @end */
+
+
+/* @group home page, news text */
+
+div.intro {
+  margin: 1em 2em;
+	padding: 0.5em 0 0.3em;	
+}
+
+div.intro p { margin-bottom: .5em;}
+
+#news dt {
+    font-weight: bold;
+     margin-top: 1.5em;
+     margin-bottom: .3em;
+   }
+
+#news dd {
+       margin-left: 2.5em;
+       margin-right: 1.5em;
+   }
+
+
+/* warning on the home page for test instances */
+#test_warning {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    line-height: 160%;
+    text-align: center;
+    margin-top: 2em;
+	margin-left: 12%;
+	margin-right: 12%;
+	padding-left: 1.5em;
+   padding-right: 1.5em;
+	color: black;
+	background-color: white;
+}
+
+#test_warning img {
+    width: 1.3em;
+    vertical-align: middle;
+}
+
+/* donation and sponsorship program */
+
+/* @end */
+Xtext/css_"http://validator.w3.org/style/baseOObplist00Ô‚ƒX$versionX$objectsY$archiverT$top † ¯*"()012TUVWXYZ[\]^_`abcdefghijklmnoptuy}U$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €&€)€€'€Ó#$%&'WNS.base[NS.relative€ €€_"http://validator.w3.org/style/baseÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A·ü»°˜UüÈÓ345DSWNS.keysZNS.objects®6789:;<=>?@ABC€	€
+€€€€€€€€€€€€®EFGHIJKLMNOPQR€€€€€€€€€€ €!€"€#€$€%TVary\Content-Type_Content-EncodingVServerWExpiresSTCN]Cache-ControlTDate^Content-LengthZConnection_Content-LocationTEtag]Accept-Ranges]Last-Modified_negotiate,accept-encodingXtext/cssTgzipXApache/2_Fri, 01 Nov 2013 20:38:08 GMTVchoice_max-age=2592000_Wed, 02 Oct 2013 20:38:08 GMTT3572Uclose[base.css.gz_'"18060-df4-4e70b571cbbc0;4e70b598e5800"Ubytes_Mon, 23 Sep 2013 11:29:59 GMTÒ*+qr_NSMutableDictionary£qs/\NSDictionary3WÒvwxYNS.string€(Xtext/cssÒ*+z{_NSMutableString£z|/XNSStringÒ*+~_NSHTTPURLResponse£€/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑ„…_WebResourceResponse€    # - 2 7 d j … ˆ Œ  ’ • ™ œ £ ¦ © ¬ ¯ ² ´ ¶ ¸ º ¼ ¾ À Â Ä Æ È Ê Ñ Ù å ç é ë )/28AJLS[fuwy{}ƒ…‡‰‹‘ ¢¤¦¨ª¬®°²´¶¸º¼¾ÃĞãêòö	#6;IWs|Šª±Ããèîú$*JOeivy~ˆŠ“˜ª®·¼ĞÔèö!             †              #ÔO#9/*!
+   Results Style Sheet for the W3C Markup Validation Service.
+
+   Copyright 1999-2012 W3C (MIT, INRIA, Keio). All Rights Reserved.
+   See http://www.w3.org/Consortium/Legal/ipr-notice.html#Copyright
+*/
+
+div#results_container {
+  margin: 2em;
+}
+div#results_container ul li {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+div#results_container ul {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+
+div#results_container ul.navbar {
+  border-top: 1px solid #DCDDE0;
+  border-bottom: 1px solid #DCDDE0;
+	text-align: center;
+	margin: 0 0 2em 0;
+	padding: .5em;
+}
+div#results_container ul.navbar span {
+	display: none;
+}
+
+div#results_container ul.navbar a:link, div#results_container ul.navbar a:visited {
+	color: #365D95;
+	text-decoration: none;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+div#results_container ul.navbar a:hover, div#results_container ul.navbar a:active {
+	color: #1f2126;
+	text-decoration: underline;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+div#results_container ul.navbar li {
+	display: inline;
+}
+
+.input {
+  color: black;
+  background-color: #EAEBEE;
+  font-family: "Bitstream Vera Sans Mono", monospace;
+  font-size: small;
+}
+
+/* Various Bits of the Table Header */
+/*
+*/
+
+p.revalidate_instructions {
+  font-size: small; 
+  font-style: italic; 
+  margin: .5em .5em 0 1em;
+}
+
+fieldset#revalidate_opts {
+        margin: 0;
+        padding:0;
+        border: 1px solid #ccc;
+        padding-bottom: 1em;
+        padding-left: .5em;
+        margin-top: 1em;
+        clear: left;
+}
+
+fieldset#revalidate_opts, 
+fieldset#revalidate_opts label,
+fieldset#revalidate_opts p,
+fieldset#revalidate_opts div,
+fieldset#revalidate_opts a {
+    background-color: #fcfcfc;
+    
+}
+
+fieldset#revalidate_opts legend {
+/*    margin-top: 1.8em;
+*/    background-color: #eaebee;
+    padding: .5em;
+    border: 1px solid #ccc;
+}
+
+fieldset#revalidate_opts p.moreinfo {
+  padding: 10px;
+  margin-top: .3em;
+  float: left;
+  width: 20em;
+  font-size: x-small;
+  margin-bottom: 0;
+}
+
+div#revalidate_button {
+        float: right; width: 6em;
+        padding-right: 3.5em !important;
+}
+
+table.header {
+  clear: both;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+div#results_container table {
+	border-collapse: collapse;
+	border-right: 1px solid #ccc;
+}
+div#results_container table td, div#results_container table th{
+	border-top: 0px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #EAEBEE;
+	padding: .4em;
+	text-indent: .5em;
+	border-collapse: collapse;
+}
+div#results_container table th {
+	background-color: #EAEBEE;
+	color: #11111A;
+	border-right: 1px solid #ccc;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div#results_container table th label {
+	background-color: #EAEBEE;
+	color: #11111A;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div#results_container table {
+  margin-bottom: .5em;
+ 	border-collapse: collapse;
+	border-right: 1px solid #ccc; 
+}
+
+div#results_container td, div#results_container th {
+	border-top: 0px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #EAEBEE;
+	border-collapse: collapse;
+  
+}
+div#results_container th {
+	background-color: #EAEBEE;
+	color: #11111A;
+	border-right: 1px solid #ccc;
+}
+
+
+fieldset#revalidate_opts table.header {
+        margin-top: .5em;
+}
+
+fieldset#revalidate_opts table.header, fieldset#revalidate_opts table.header td, fieldset#revalidate_opts table.header tr {
+        border: 0;
+}
+fieldset#revalidate_opts div#revalidate_button input {
+  background-color: #EAEBEE;
+  color: #365D95;
+  padding: .3em 1em;
+  border: 1px outset #ccc;
+}
+fieldset#revalidate_opts div#revalidate_button input:active {
+  border-style: inset !important;
+}
+
+/* Error Messages Display */
+/*
+*/
+
+/* "Fatal" warnings... */
+
+ol#warnings, ol#error_loop, ol#fatal-errors {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+ol li.msg_info, ol li.msg_warn, ol li.msg_err {
+  border: 1px solid #EAEBEE;
+  border-top: 0;
+  list-style-position: inside;
+  padding: 1em;
+  padding-bottom: 2em;
+  clear: both;
+}
+
+ol li.msg_info:hover, ol li.msg_warn:hover, ol li.msg_err:hover,
+ol li.msg_info:hover *, ol li.msg_warn:hover *, ol li.msg_err:hover * {
+  background-color: #fcfcfc;
+  
+}
+
+ol#warnings, ol#error_loop, ol#fatal-errors  {
+        padding:0;
+        border-top: 1px solid #EAEBEE;
+}
+
+ol#warnings li ul li, ol#error_loop ul li, ol#error_loop p, ol#warnings p {
+        line-height: 135%;
+        margin-bottom: .65em;
+        /*margin-right: 2em;*/
+} 
+
+li span.err_type img {
+    width: 1.2em;
+    height: 1.2em;
+    padding-bottom: .2em;
+    vertical-align: middle;
+}
+
+/*
+li.msg_info span.err_type{
+  background-color: #888;
+  padding: .1em .5em;
+  color: white;
+  font-size: smaller;
+}
+
+li.msg_warn span.err_type{
+  padding: .1em .5em;
+  background-color: #FA9084;
+  color: #333;
+  font-size: smaller;
+}
+
+li.msg_err span.err_type{
+  padding: .1em .5em;
+  background-color: #D23D24;
+  color:white;
+  font-size: smaller;
+}
+*/
+.msg {
+  font-weight: bold;
+  line-height: 130%;
+}
+
+li.msg_info span.msg { /* these messages are not errors */
+  font-weight: normal !important;  
+}
+
+.ve {
+  font-size: smaller;
+  padding: 0;
+  width: 100%;
+}
+
+.ve p {
+  line-height: 110%;
+  margin: 1ex 5em 1ex 1em;
+  text-align: justify;
+}
+
+/* no Helpwanted, hence giving it a bit of space instead */
+li.msg_info {
+  padding-bottom: 2em;
+}
+
+p.helpwanted {
+  padding: 0;
+  margin: 0;
+  margin-top: 0em;
+  color:        #888;
+  text-align:       left;
+  float: right;
+  width: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 0; 
+  top: -3em;
+}
+
+li.grouped p.helpwanted {
+  top: -1em;       
+}
+
+p.helpwanted a {
+  color: #88f;
+  text-decoration: none;
+}
+
+code.input {
+  margin-bottom: 2ex;
+}
+
+code.input strong {
+  color: red;
+  padding-left: .5ex;
+  padding-right: .5ex;
+  font-weight: bolder;
+}
+
+
+/* Source Code Display */
+/*
+*/
+#source ol {
+  font-family: "Bitstream Vera Sans Mono", monospace;
+  font-size: smaller;
+  background: #EAEBEE;
+  border: 1px solid black;
+  margin-top: 1em;
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+#source ol li {
+  margin: .5em 1em;
+  background-color: #EAEBEE;
+  line-height: 150%;  
+}
+
+#source ol li a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+pre.source {
+  font-family: "Bitstream Vera Sans Mono", monospace;      
+  border: 1px solid black;
+  background: #EAEBEE;
+  margin: 1em;
+  padding: 1em;
+  overflow: scroll;
+  font-size: smaller;
+}
+
+/* Style for non-parser warnings. */
+/*
+*/
+
+ul#warnings {
+  padding: 0;
+}
+
+
+
+th {
+  padding-right: .5em;
+  text-align: right;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+td {
+  text-align: left;
+  padding-left: .5em;
+}
+
+.info {
+  color: black;
+  background: white;
+  border-color: gray;
+}
+
+.warning {
+  color: black;
+  background: silver;
+  border-color: gray;
+}
+
+.error {
+  color: black;
+  background: yellow;
+  border-color: black;
+}
+
+.fatal h2 {
+  color: black;
+  background: red;
+  border: solid black 1px;
+}
+
+div#result {
+  clear: left;
+  padding-top: 1em;
+}
+
+form { margin:0 !important; padding: 0 !important; }
+
+h2.valid, h2.invalid, h2.tentative_valid {
+    text-align: center;
+    margin: 0;
+  font-family: "Bitstream Vera Sans", sans-serif;
+  font-size:		1.3em;
+  font-weight:		500;
+  font-style:		normal;
+  text-decoration:	none;
+  word-spacing:		normal;
+  letter-spacing:	normal;
+  text-transform:	none;
+  border-color:		black;
+  padding-top:		.2em;
+  padding-bottom: 	.2em;
+}
+/* the default color of the headings is green now, 
+but we want to use it only for "congratulations"
+and stick to a neutral color for other headings */
+
+h3, h4 {
+    color: #777 !important; 
+}
+
+h3#congrats {
+    color: #690 !important;
+}
+
+.valid, .valid strong {
+  background-color:	#55B05A;
+  color:		white;
+}
+
+.tentative_valid, .tentative_valid strong {
+/* we could use a different color than for "valid" */
+/*  background-color:	#888; */
+/* ... or simply use the same */
+  background:           #55B05A;
+  color:		white;
+}
+
+.invalid, .invalid strong {
+  background-color:	#D23D24 !important;
+  color:		white !important;
+}
+
+td.valid {
+  background-color:		white;
+  color:           #55B05A;
+}
+
+strong.has_warnings {
+  font-weight:bold;
+	color:#CFAC08;
+	background-color: white;
+}
+td.invalid, h3.invalid 
+{
+  color:	#D23D24 !important;
+  background-color:	white !important;
+}
+
+img.inline-badge {
+  float: left;
+  padding: 10px;
+  margin-left: 3em;
+}
+
+pre.badgeSnippet {
+  margin-left: 108px !important; /* give room to the image */
+  padding-left: 3em;
+  font-size: x-small;
+  color: #777;
+  margin-bottom: 2em;
+}
+
+p.backtop {
+        color: #bbc;
+        font-size: x-small;
+        padding-right: 0 !important;
+        margin: 1em 0 !important;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: .3em;
+        text-align: right;
+        border-top: 1px solid #eef;
+        clear: both;
+}
+
+p.backtop a:link, p.backtop a:hover, p.backtop a:visited {
+        color: #bbc;
+        text-decoration: none;
+}
+
+/* document outline */
+pre.outline {
+    line-height: 160%;
+    padding-left: 1.5em;
+}
+Xtext/css_%http://validator.w3.org/style/resultsOUbplist00Ô‚ƒX$versionX$objectsY$archiverT$top † ¯*"()012TUVWXYZ[\]^_`abcdefghijklmnoptuy}U$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €&€)€€'€Ó#$%&'WNS.base[NS.relative€ €€_%http://validator.w3.org/style/resultsÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A·ü»¹”zlÈÓ345DSWNS.keysZNS.objects®6789:;<=>?@ABC€	€
+€€€€€€€€€€€€®EFGHIJKLMNOPQR€€€€€€€€€€ €!€"€#€$€%TVary\Content-Type_Content-EncodingVServerWExpiresSTCN]Cache-ControlTDate^Content-LengthZConnection_Content-LocationTEtag]Accept-Ranges]Last-Modified_negotiate,accept-encodingXtext/cssTgzipXApache/2_Fri, 01 Nov 2013 20:38:17 GMTVchoice_max-age=2592000_Wed, 02 Oct 2013 20:38:17 GMTT2501Uclose^results.css.gz_'"180d9-9c5-4bb0d7a612b40;4e70b598e5800"Ubytes_Mon, 12 Mar 2012 15:34:29 GMTÒ*+qr_NSMutableDictionary£qs/\NSDictionary#9ÒvwxYNS.string€(Xtext/cssÒ*+z{_NSMutableString£z|/XNSStringÒ*+~_NSHTTPURLResponse£€/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑ„…_WebResourceResponse€    # - 2 7 d j … ˆ Œ  ’ • ™ œ £ ¦ © ¬ ¯ ² ´ ¶ ¸ º ¼ ¾ À Â Ä Æ È Ê Ñ Ù å ç é ë#,25;DMOV^ixz|~€‚„†ˆŠŒ’”£¥§©«­¯±³µ·¹»½¿ÁÆÓæíõù&9>LZv„­´Ææëñ *0PUko|„™°´½ÂÖÚîü'             †              )ÔOÏ‰PNG
+
+   IHDR   n   =   {Ÿ¬   tEXtSoftware Adobe ImageReadyqÉe<  ¯PLTE6]•ñññşşşÿÿÿõõõöööôôôúúúòòòùùùûûûóóóøøøğğğüüüııı÷÷÷   Bg›Np¡???h…¯~~~>>>Oq¢[{¨±ÀÕ   Bf›Œ¢Á—º===Zy§Nq¢£´Ítµ}•¸s´OOO~–¹[[[ooofƒ­ìîò000Zz§qŒ²èëîæéì™¼¬»Ğ___ÍÍÍÜáè¸ÄÖêîôëëë¼¼¼×Şé»ÇÙÅÅÅ®®®ÔÜæ···ğòög„®¢³Ì}}}ÓÚå˜«Ççêí///íïó¾¾¾ÂÌÚ·ÃÕ¡²Ê ±Ê—ªÆÊÓáKn îîî§§§ñô÷JmŸ½½½ÛàçØßéßäëâçî¯¾Ó­¼Ñ°¾Ó³ÀÒïñõããã¶¶¶ÒÙä€˜»úûıYy§ÇÑßíííáåìr³¶ÂÔ£ÂÅÏİãæêÕÜçñôøq‹²™­ÉÑØã™¬ÈáæíªºÒUu¤eƒ­ÜÜÜ‰Ÿ¿Š ÀÚßæºÈÛ‹¡Àˆˆˆ;a—˜»ìììîğôŞâç¢³ËÈÒà```NNNÌÌÌBgœ»»»ÖÖÖ\{©¬¬¬ªªª‰Ÿ¾ÇĞŞäéğYy¦åååUv¥ëíñÄÄÄeƒ®”¨Ä³ÁÖ˜˜˜ÆĞŞ®½Ò¦·Ï²ÁÖÛÛÛºÆØĞØâ¶¿ÍÇÇÇ¾ÊÜºÇØ¿ËÜòõø«ºÏæèìÆÆÆ‰‰‰|•¸ñóöxxx½ÉÚ‰¾ÈÈÈYz¨@@@kkkÏ×á---¤¶Î—«Ç¿ÌİÉÓáÓÓÓš½Wx¦İâée‚¬|||ÊÔâéëïàåì½ÊÜ\\\ÓÛåg…¯«¹ÎŞãê“[{©zzzèèè...<<<^^^jjjMMMèêísµŠ ¿ÕÕÕlll¹Å×–ªÆİİİ~—ºõöùu¶¬¨hõ  ¶IDATxÚì—‡wGÆ’…I+É2¶$l6ØÆ`‚mÀ¸Q¡…„Ş	„Hè½¥÷Ş{ï½÷Ş{¯Hvfvu{j‡ )y<¾÷,Í7e·«;=K³X–mÉß§åJ–Æ«´jÙ¹¤i[rJÓnÍ-nŸvJ§ô×ôİ–ì©q÷tí¦–ìjÃÛ*î#K¶õºŠ{´w¶õ·Šë}<¸³7ıLánó:õVÂ3”/?74´Px1ÿk¨z±ª,Î­+ü=Â<_u÷OÄQ¡e ãòæas»+ë@]™>˜w7ø‘Ò}	î½zvâ7õ–1Ò Î²?İUnÖl©2Åá‚—Kw.¼Q×C~4“
+®ää€›ùƒ+ıÉq.Ex\c„¦¿^,DŸÂX»óşUğ»Øª «KŸL…[‰µIá®qØ=Ì`D£™  ¤İîŠ®ò»¢u•æ¸‡ Q(İH}\EàSü>Na\ŒÙm\Àå:ü
+Í€ë§Ê™s„A@¡,á†^¥ÏòSŠv)…Wó°	‚íÍMêª)q¸f‘0K±¾0ñJğ:´i7s\³ßÌÚû%QJ˜
+ğiúVba)åÛûNŸ6™álª*©õTÿ‰\1ÄÅzè=HùK»×f¢”8~*ÏbØAu/ğ6]ÑE˜î~Öe;v\‡¾‰BÑğFŒAäñøØb¸öŒpvƒZ!5¢Õ²¡Ü ˆöCt“Gä@»Ân¦Ô8û@Èµò`¾l@x9Dócš÷µn‰³n?ä	€ïŠÕv{7¶vËmâU´®+3œÓ¨3 7p·—¯@¸’uô~¾ Àiª48ª'À¹u:KVÅiŞáÜ¿wœ¸râì!j	½ùàíCÙ²¢„FKx|M†8Oœ&àB T{<w{x"¼ú”¦‰ô3×ãùºÀcªt¸¹xN˜àñÜŒğ?àuÚu&<¿e†ë¯jÈş/K¸ûÂÔ}†.ÈkÃxğ|_S¥Åí”¸Ã±ÃØu8ùpæ¸%²²ÜçÒgìºóq}ä•ßÑù„›glÚ„ÉM}FéqCÅé‘ûEô}`lz“œ Ü<qzäÎ'W×Dé/®Œ~ĞgMĞ*Œ6Œn
+•FÈ¦Q˜½1?|Y[â‚éqV¼ÉµzáèlïçQığ«š-µş0Ã8ú{2cÜZJİ‡OÂõê	µ¶…P'Ûû8=Î‘¨9¿MºNpCx€ÜÒNLÖàìéG$4Vb¬"q=œnş—cn-ìèÄO±t‡Ğ÷ ³ĞbÙ¸—ÿú5sÜµ´”ĞTÙ5•&J·‰g®ÁñßnpFş‹¾Ã‘——D“ùéén—¦ÕPô®á÷hJ(¡%É–3Ãå…µÉŠóiQP»\\^KÉEßè?’ÒÌq5†ôsÚ.ÕÖè{«•åEßXho)®W2}¶Qu“nPâpÃ„Ÿš¤6ÜRñ
+cß>óf¯ä2ÅXı‡¸Ç³NûQÅ­É:nŠÛºî´ìjİVÃÓ:kÁ¡,Â-˜¥ı+À -nwŠÚ“r    IEND®B`‚Yimage/png_&http://validator.w3.org/images/w3c.pngO`bplist00ÔklX$versionX$objectsY$archiverT$top † ¯!"()012LMNOPQRSTUVWXYZ[\]^_`defU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€ €€€Ó#$%&'WNS.base[NS.relative€ €€_&http://validator.w3.org/images/w3c.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A·ü»±	¤ÏÈÓ345@KWNS.keysZNS.objectsª6789:;<=>?€	€
+€€€€€€€€ªABCDEFGHIJ€€€€€€€€€€€VServerWExpiresZConnection]Last-Modified\Content-Type]Accept-RangesTDate^Content-Length]Cache-ControlTEtagXApache/2_Fri, 01 Nov 2013 20:38:08 GMTUclose_Mon, 12 Mar 2012 15:34:29 GMTYimage/pngUbytes_Wed, 02 Oct 2013 20:38:08 GMTT1999_max-age=2592000_"183a3-7cf-4bb0d7a612b40"Ò*+ab_NSMutableDictionary£ac/\NSDictionaryÏYimage/pngÒ*+gh_NSHTTPURLResponse£ij/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑmn_WebResourceResponse€    # - 2 7 [ a |  ƒ † ‰ Œ  “ š    £ ¦ © « ­ ¯ ± ³ µ · ¹ » ½ ¿ Á È Ğ Ü Ş à â$*-3<EGNValnprtvxz|~€‹‘“•—™›Ÿ¡¨°»ÉÖäéø4:ZdjŠ¡½ÂØÜéìöû'5GJ`             o              bÔOL‰PNG
+
+   IHDR           szzô   gAMA  ÖØÔOX2   tEXtSoftware Adobe ImageReadyqÉe<  ŞIDATxÚ”VYlTUşî½3Óh¡´–]hgZ°”
+”E”‚P Rõ¡ 1Á Q©ğ ¢ÑŒáÉ1W4&ê“€…T†*‚bJ7–PŠĞ­méŞYÎİüÏ¹wèĞ™ÛLÎÌôÎù–ÿûÿs%M7Ë¥ÈLÃ;ŞsKšZvLIS–‘2¦nëŠ’NEªS£ÜÏ48§±_®¾Û5ê¯ü˜•6®lZÆü|ÉWöò—Ç¾§=+œJl[J±8@ê]ç®µVoü ¶bóŠÌ)*„¯‡!;	Ø¹÷â\öñså•à½—a¢&ßğ~mÅó+KP4İƒ†[½`šNÿ“ñ`f<ví?—S‰ŠDLƒO/t£áf/Ã€ª›ğ«:dIÂ#9IØıÍ	¸rbóòQIDM`0xaõ\àŒ~Ï4ƒHhˆD…;ŸúNÇèNDEàNÍ	¼Šjî.ÈG½o@yˆìg:™bõ3]X;c<¾:|ÏÄğNÜ“À`ğ<O>Îøz8ÓL¨´ú©ƒ¤1hG¾W?³œØ8+û…Cv°†!1*Áà¹î|œjîÉ•“õ!" º§&(x8{š»‚8ÜØ!ˆh†‰Ş *ÖªÒIøáäoPe‰ç@$8oµìü<œ¸ÑMêtD­ŞÒ0'seÅã…©HMt 3 âfW 7:ı¸ØÒ‹W¿mÄ¢ù3y^\[>=Z=ÜœGìs
+\V^~¾ns«9p@5DêùûK­ıh÷k¸ØÖ?[úp…Vè%rŠL.1¯nÄƒ¥÷CÂ¼{E‚W•—`r.)oî¶‹¤Ûiaã‰%?É)£©Ã{BP$ÓÚØ4ÄjÒÊèŞ8‡Œ7WºqªádYå ¼¼u% èÍ€òò™›+”óÂi•—€’–ä@Aj<JHtJhía×IİK] Ó·ˆğ•ÑxNbUN»,H|øìòÊx§â•	<ó×¿[÷mà%¸/'Çşî²jnÛÍëd–ò~ÚŒ»21Ñ‰•ñXWœÅ9ãI„:œ‹ CJ”c{íE,˜]À;Éµõ³£ÕšaT(…+zå='ªÖ—Í$ğ<üDà d+çµgb%ˆ€FŸ}”ú/Îÿ‹DRõPv
+š»ƒØÿ×¶¸6:Dé÷êšÚ°añt\mşO9½m¹¼³¦¾lî´dSà~hê¼£<`M(gßù5”ö ½oé	ÃI Ícˆò08Ÿ\”Ó>Ê·{ÿÀ²Ò¿Ğçhí	 -9·ƒÖáuåŠCš!1{ĞˆÏ´ò{ºLXÎxy˜Â`¢ƒÀÉsñÙ„!º£Ÿ2ÓK¢Ôò‹«g‡¾;)Z7²RĞéW-ådgË§]€ÙŸéû.2ºÀ'’lO–ÁÊMFR¸á![–¢»½éÉI!yã’¢­kxßŞW‡ÒYããÑ!H„¨‹ƒ†¿ú˜*ˆHa Ú–·´,Yª­XŠ9¸åˆõ¯ZìA–SÇ‘ß¯³§Ëf<#BêµeEY•OÌóxßÚ[‡¥é@î„Üö3Û	^Ë~0ˆL:,p^Õ6®Ø¾Oœœ6xËÄú«líBO%$¯Ì‰ÒìfåÅÙ•OÌ÷xwVÇê©LKM@{?%ğÛAä3ÃDØfËZşŒ(EÖİ†íÆPğFöäÂ‚J—Cñj|…Çp_€±ò™–ïî?uy	pOLD†· nXÌí¤tÒp‘è´“16N?dxh­ààÚğ8|ÈYĞGN,'Ïs{ß¯9‰M3ÆbFÆXş½P.l¥M]¤zÖÔ¬-Î!,Ê‡M¥S11Éi+7"ÀİÃ‚ÛÑ…t£­7Ú{Ä¸”$ëË1ñN×‘?›«m¬¨zl!Şûµç}HrÉ"NÄ³¥YH s@'@>ëã)¿ÿÓ…×ş!¦ÎFç—NµÏI7<¡$`WC‘è Ù/‹äóÔ„åV&dX3w	5<’Àˆñ¼<«KİŞİOã…¹i˜5%™‘*Rr¼îüD‰!¥F>âóÀ¨$¼gğÒÜû0kr²°˜·Ÿ˜‚B¹Î{Ù3»HÌÍ÷î>Tmó2Q<9»Óú!xT†%1² 2èºnÄ5Á$>©=‹m¦bvNªxHÙ²Äƒl~5&ğÛp´‹wÇQêšúÆŠueE0NÜ¼Õ†ÓWşakx¢¿gv%‰‹7o½çäåU4Aƒù“&˜ó=“Ö«ª~Ğ°Ïˆh	ü/À Í(À‚üÄ€    IEND®B`‚Yimage/png_2http://validator.w3.org/images/info_icons/info.pngOlbplist00ÔklX$versionX$objectsY$archiverT$top † ¯!"()012LMNOPQRSTUVWXYZ[\]^_`defU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€ €€€Ó#$%&'WNS.base[NS.relative€ €€_2http://validator.w3.org/images/info_icons/info.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A·ü»¹ÊÂğÈÓ345@KWNS.keysZNS.objectsª6789:;<=>?€	€
+€€€€€€€€ªABCDEFGHIJ€€€€€€€€€€€VServerWExpiresZConnection]Last-Modified\Content-Type]Accept-RangesTDate^Content-Length]Cache-ControlTEtagXApache/2_Fri, 01 Nov 2013 20:38:17 GMTUclose_Mon, 12 Mar 2012 15:34:29 GMTYimage/pngUbytes_Wed, 02 Oct 2013 20:38:17 GMTT1868_max-age=2592000_"183a7-74c-4bb0d7a612b40"Ò*+ab_NSMutableDictionary£ac/\NSDictionaryLYimage/pngÒ*+gh_NSHTTPURLResponse£ij/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑmn_WebResourceResponse€    # - 2 7 [ a |  ƒ † ‰ Œ  “ š    £ ¦ © « ­ ¯ ± ³ µ · ¹ » ½ ¿ Á È Ğ Ü Ş à â'069?HQSZbmxz|~€‚„†ˆŠŒ—™›Ÿ¡£¥§©«­´¼ÇÕâğõ @Ffpv–›­ÉÎäèõø3ASVl             o              nÔ ON‰PNG
+
+   IHDR   H   /   Ï~ò  IDAThŞíYiLTW†‚ KÕJ5"µmšÆj(¡‹mZ›Ô4ÛÄj…ø£‚@EEÜ ²´
+TQÊ*Â 2  "È&«ìÃ"(È¢ 8À(‹ÀÀ0;íÁÇÜ¹óŞlPğG;/7„y÷{ïœoÎ½ç|÷ŒÖßÿÑKKCLCLCLCLCŒJ¬ë%û1k”\¾ˆŠON" ¡H¬ü½#>W9øBñŒü˜˜ú&?ş|xxX±¿ßÑÚMŒË­rßõÑá„¹sÿ¹rÃ»£ËXÑÌ|Eu=00ĞÊÊjãÆ¾¾¾ƒƒƒøìÑ£G‰ššš.^¼˜““C§Óƒƒƒ±óYŸÏçËõõP|Âì¥•+aá]éš4#bm}#ø˜L¦………v-_¾¼¸¸˜˜---]¸p¡P(AAAÑÑÑ...µµµQQQ2ÄÚzGC‡8OHu· ¹aV ƒ÷Šˆ1:ûgÄÊê\6şøøø8‰q544L­¯àc[[ƒÁ¨««		ñòòrvvnmmˆˆ!>®>–Š,İ®ï¦º+Š—ìŠG˜†§ƒŠˆI­G°w÷$şğÇÒ0İ'§}Ì£™íáææ¦¥à277ÏÊÊ"şÏÌÌlooÏËËb………ÖÖÖ“““¡¡¡ä¬x,±s*“ëñ¯!Eãs£A±Ïİo"X|ÙcÒìĞ8oÙD »ø,‹Å200 \_°`ƒƒCBBBrr²½½½®®.7økffÆáp  K´¯¯¯¨¨(55577—L¬äQ2fæJ—»Ğ®U<A˜¯NgÈeÅË–†¢1<Î'\c+ĞKL]“F'd gÏE›ªººŸª¨¨X±b1{åÊâ&—Ë|}…‡‡79uL ›ìN@&ëº¨Ng72à-;Zß0‡Š‰,lE˜g³I³İCºv4%ñ´´´¿!h°y¨/‡hll¼zõjÈ3(Ğ¶a%È¤WZ=Ù0¢‹Û©˜-çó (§Ÿ‚Uğ½ošıÎ;“”úûûµµµ˜ŸŸŸ"ÃÂÂRRRf¦<RªºÕ/Üo’ àÂ“qbÛ.Ş%aÆyBCÇ8è|ÉÆgé•hJÇÖğŒœ~
+
+
+€•‰‰	$FE‹D¢IÅ	Y>1°+¦Wš-v‹Ì2è"¥é·®r22%³¡ÍšŸHÇ§Æ¸(hÖ%¦‚êT! iîµ¢Õ¹dv‹Ì¶¾ÕH-A9L³'ºM¤3ğ©SÉµxãQ½ñ÷÷bÙÙÙsOì¯Üfd~Ë	òÍ™Û(˜³/¶ïí—Æ¤¬íšê`êïŒÅŸÉ[N>>>âÇÆÆæì
+mÛióFR	Â™Ğ‘d³Íæ!ïLFB"Åc"K]ß|>ê5ÇS3(2 "¶víÚù:¶|z2™Ïl˜»´’vt3ª¨´"úx_’ ‘¢›;#JÑ_ŒL(S'’xäâââ6mÚ4_ÄğÍ "¸i}© e3ˆ^Ğ|oÜ'0_zÜB7ÓjJÅÄğ¬^|ãã\F#BÖÔÔlß¾}¾ˆU´¿À%ìH} ‰;ßzİ:Sğ…Æ’;_{NILpÀvàu[0 a<ì]†V;I+òx<GGÇù"{cÙ^©–«íÈÁâã'ù‚m$1>C\püèŸ«ÜjBù<€va%Rá9­‡Ë¥Èê™´z×ØJôñ¡äD[ÚnÒŠÛ!…¢¡ù-*ƒÎFx‡X6w:ÂóH,ñY©şá¡iÁ‡h„y9ÊEªo“°Ì¨Î×¤rŸÛÔó&š9 ğ²ƒÆáø*bŠùìÔMuÃÖ]ê,ÕÜî<xC]ªŸüs©Nµôá˜€Ì&*Æ3µNMÛX]qKb¼!baùH/İ@jNµöS‰1:ûÕ´—‡#	ÕêHÛ9 Ö=8†'e¶aÅTŞP€±Ò5I¬¶øYRTKK‹ú~3™L>Ÿ?Ë†)ìÜéäªN*æØµã-ÓSà	EŠZ#Cc<ìÄSÒ––Æb±Ô$fccC4vfCÌëÉLò9r¾¡ÒVNuºúÙ î—ïM\¼+~€Í¥>ƒi4¢¯8::êää¤Î‚LJJ‚C F›%1Fç€¢º`×™H:3¸h†³3zvGh1É[2øşøÈubŞÓÓÓİİ]9+8ŒİooïYƒİb&é{ÂqFÌ>bº¡°;æÀ™õ,›ï«äI¤‘Ø>¼W`öCbŠÍf¯Zµ
+šŠöN744VK–,Q¾nµTuªË‰šû´_aÍ½‹T?~?;ÚMÉÎıt§È{®V­9†ß‡pòDOåççëèèXXX¤§§£~5¬ÏÊÊJkkk¢E¥­­­²í¡‚qÔ·<uC	†ıºšƒöë}Å!|[à]å=`‡¸š'äòpéÒ%¢¥³hÑ¢uëÖ­_¿ŞÔÔo›ÂyôßşŒÄáaçœ¾®¢æ‚ê]wú–œßDø"¤•©cñoñŠ”THHˆµ¬««47¿ı˜Ïx¢¢æB5÷I—Ÿ|!mÄİëøD¶ÜA„!£@æT&&›š`íéëë”€çÖ­[ëëëçì‡¿–a•5ŠiR[wm}#uİ)U]P!ğÓšŠ%Ãá@ánnnVÒû_ş¢©!¦!¦!¦!¦!öúú`wTX äç”    IEND®B`‚Yimage/png_'http://www.w3.org/Icons/WWW/w3c_home_nbObplist00ÔwxX$versionX$objectsY$archiverT$top † ¯'"()012RSTUVWXYZ[\]^_`abcdefghijklpqrU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €$€&€€%€Ó#$%&'WNS.base[NS.relative€ €€_'http://www.w3.org/Icons/WWW/w3c_home_nbÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A·ü»±	øäÈÓ345CQWNS.keysZNS.objects­6789:;<=>?@AB€	€
+€€€€€€€€€€€­DEFGHIJKLMNOP€€€€€€€€€€€ €!€"€#TVarySP3P\Content-TypeVServerWExpiresSTCN]Cache-ControlTDate^Content-Length_Content-LocationTEtag]Accept-Ranges]Last-Modified_negotiate,accept_1policyref="http://www.w3.org/2001/05/P3P/p3p.xml"_image/png; qs=0.7XApache/2_Fri, 01 Nov 2013 20:38:08 GMTVchoice_max-age=2592000_Wed, 02 Oct 2013 20:38:08 GMTT2126_w3c_home_nb.png_!"84e-41880fcdc0200;475d1b4285780"Ubytes_Fri, 14 Jul 2006 01:56:24 GMTÒ*+mn_NSMutableDictionary£mo/\NSDictionaryNYimage/pngÒ*+st_NSHTTPURLResponse£uv/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑyz_WebResourceResponse€    # - 2 7 a g ‚ … ‰ Œ  ’ – ™   £ ¦ © ¬ ¯ ± ³ µ · ¹ » ½ ¿ Á Ã Å Ç Î Ö â ä æ è"+14:CLNU]hvxz|~€‚„†ˆŠŒ ¢¤¦¨ª¬®°²´¶¸º¿ÃĞ×ßãñö+9L€”½ÄÖöû17W\rvƒ†•©­ÁÏáäú             {              üÔ"#$%OÅ‰PNG
+
+   IHDR   7   0  M»E?   tIMEÒ.Âeu  yIDATxœÕXiTS×Ş÷d fT¢ ˆEú¬¶â„¶ÊPp Z}Ö%®j•Áy–eADÛ*¨°EÔ'hQŸXÔZÈÔ42‘{ÏûLDA‹ë­î?÷s¾ıïì3Ü}.1=£kıCf€s3  0ÆãÉg0ÆNëİ§œŸ1FZ¯¡QãìÆòªòÊtX¹»i^ c<aÂ„äädµZM’dppğÊ•+‰·iğÌ˜ ˆN»îw  _æN âÆÜJMj@ NGÃ.,/ÒQh:øiCg1˜˜„1öõõ•J¥B¡cÜUCú•³;òãM¬LOÔ‡ò:7é ‘pÑÍï  Ñ‘J®¢3è P™û´&±X§KcÓ·ø A#®û¹”Yûû3 :s„ ƒ–º_yó)&±PT ƒ'9Ò˜´=.ëŸ7¿ĞAÃÂÂ< GëtÍ²¿­]zzú¸|Ş5ŸÓbASâ	¹¹¹ºøûûãîÌğ,4z—²Óâ±Üq6/«¯|wnè {ÃÁ€©™ó)5¥-â›’¼9"àqäsN%Sˆ  â3NgVÔÄÒ _ª¼z!×ÿ¬¦rËá   L˜Æ™TêvP•L Üı àÓS_j*¿_±Ã ôFàYÊ6% ¸=
+ Ï/T^¹wí/‘àU¯¯ÛÎÔÍKÖÍKc
+S¯MABBÂ£G¬¬¬ìììV¬X±qãÆ€€€>}ú<|ø°¼¼|Ğ A|>ıúõĞÖÖæááQWW·wïŞ1cÆL›6cìãã“˜˜èáá!—Ë¥Ré»MlO¡J•!Ä 3zîºZ:›}ğ¨A>Îˆx­c‚†¤­¼Z«Œè“ï¦ôãeìY}¨vò-]bŒCXŞ‹½Cô›~ÕÂí‹Ù³luŒ°îªOM9°wÔÆšO½Ã… ˆcÒÌGÅ="ı£±X»“öÙK×ìøÌ¾V}Üœ]+O×çTAhZ™ÆÌŸÎ%öˆtÛÑ:ê)yİøAøşu Ğ¦¹~ı¯~3‡À«ˆµ«Ô_Í
+îiÖ÷gê²øÄ+^&›Yõ¢ Ø,1SªACSZİ&ºNĞgèºüµÖÜú²è°)ççóĞVÊ•ò±û§~zÊÏmÉ'ÚšÍGw®9°ş=Ïª€ÖÖÖüüü‰'€§§ç¼yóF=~üx ˜1cFsssBB @dd$ ,Z´(00 ÚÛÛ`Á‚gÎœiiiÑ¿¢¢B"‘¸ºº
+Œquuusss}}=ÆX$aŒóòòZZZ(ŠÊÏÏ× d2YSSÆ¸°°P"‘H$’’’’8üŞ'5°ô$I…RÑCÆ·%
+¥bş–Ğ"ùS3Ã„!{)“W·.rŸ»}é¦·x½qÔ?œ>x¸"½ß¨T;Õ	ˆ†Ê.ß‰¾Âë;ğ£Åæ0òéF†OLÂ‡Õ7VgÙY÷Óo5GQsÃ9qÎ›è  S¸¿ÛàñS¶`œ>Û‚gÓI`Œ•R…vïkH¼G<w¸{FŒ1vdbòUì¢ö6ÿ;ÛĞì€“îBGY“´3éÙGºg|\ùÄrˆN ²U~yÍYßÉsÌ8f1ßîr;jcÀ@Úİ3
+Eõ: Qyı0£¶°L¥Pi‹,³×òÃŒ6Ö©[.–<›Fq£¶øKnƒÅÔ@ªìqŒã¨áKmÑÔ–ã¾Æ³º¾ Nÿ–‘Ùtk*@ÔzÖ•‘F£É5kÒ* Àvğ‘”•
+ [Oí¶r²ÕyÒi}©Ïh`…?®,]’alf¢)6>=Šº:™}:IöPŸå–Ö&”t¯ FØ»«ëß‘ı!‚VÙ€àYª5qmÓù•'Îÿ,–¶ @gY†ÏÔ-GìË¬Ûš$ğ`İ¹0HfK3fÔŞ«Œÿl››³«TÖváÎåÕ?®­ğuÎoÉËj*†ÌÑ¹æIõÓ9Qsõ‘õzºgPæ{ ¡Pèãã£R©âãã“’’d2™¯¯/I’ûöí;~ü8 FFFRYZZzéÒ% ¨©©yøğaIIÉš5k  ""B÷ı²³³Ã%''oİºÕÅÅeÏ=3gÎLIIYµjÆxøğá|>ÿêÕ«ØòåË5_´ìììI“&aŒ£££srrœ±æ¾Èd2¥R©¥¥å½{÷<xÀf³#""bcci4š‘‘ dee988dee@CCŸÏommEq¹\¹\ $IzyyåääèfæöíÛãcÇÉårŒñ­[·0Æmmmb±c¬T*srr´0Œqcc£\.W(ãë×¯cŒ¯]»¦iÒÍµJ¥ºxñâ[¦¾‡ÖûsıA’€^··}±{b$Eóß-.(­)«{ù¼UÖJR”‰‘±×Ê¾Ï`7ç±oÉµø›½¼g,oŞÙ}boÉË§fNÖæ­Æ!ÍòÑĞ €T‘²&iCÙsÓ£¯§‡,e1Y\%EQ›ïHÉ?=ğS¶-‡j§ gîa’ªıı™Ì:i]‚Ó ¡JefŞ…•?GšádÄ5Æ~¼Ko€h¨êvù'\·äM‡zx#}•[Ş•Z”á0ÅEû¯É ‚   cxKŒ‰Í´båb~µ±°î5•G~MŠşm¿ÃtL ˆÀ7–½×´šP, 9(ÕæĞwä #3e(êˆšªú
+¹c2zÑî÷¸X">|%ÅÎƒ††CĞ‘ğ^•+v~ıE3S³ÎM©—Ò¶e|?`úP†1S¯9SjÊ‚g]^U–}æ«9®³]¬ûÛHayQCÁ45Ò:b %‚±Ç‰>ÑE" „Î^˜¸,¾ş¿ÕI^â‰hË–}¿ìnôH%IR@ ¡ß  Aª)Scö›|ÙÆlˆ¢0è»c  ©íÂîUrn$§·ËUúB©vÒnô€ËU¹ëlÖwü½øŞ7û¿µ×—Î¤ëo& khm?Bßñ}TÚZÙN
+¨{XCĞ„S0xÊ°|‹’şß¸ø®›¯&Õ šfı%oÅõı|‡²ÌM0Ù5`IêÅvjëÏƒzG% ¬ŸÚgbmA%bÒ	ÅÀ¤İhë×è4: „Ìš6r²¢MAFĞüe›ô^ã±¨DSÓ^S	 G7\>zÑÓó0ÆÚ;FG¯ù•k}W6¦£† ~\gTm’.`Ä¤½x,0úS}?ñ–S§[Yï¨€5A+‹È·ú“ÉÏ-¥(Š # @Z]aíLç¿}B;ƒm-lâ–F‹îşEªI €@bĞš*EµO÷NÛ–w §]İ¾6qó_"áÕû×7İ)h¨[·RÕ®2Øõûd$Eúõhâ¥$¹ÚØ’mZKÏ‰=oÎéz@ì‰}
+’ÍZ´>išìğÉÖ%ëíûÑ4aŒ3o_ôûiÁ“ûN‹•8°—+9»õÊÎ&	¹¦\®	çM€ªúš¶ı5ëõ½íŸ‘Ó¶mÛ $IÎ™3çèÑ£_|ñ………ÅÒ¥K÷ìÙS]]bff–ššKQT@@ AK–,Ù·o_eeePP‡Ãqww‹Å¾¾¾<O$ÅÅÅ™››=xğ ""‚$É¸¸8 ğ÷÷·¶¶ŠŠÊÈÈ¨­­İ¸q£P(‹Å111EEEEõë×ïäÉ“)))³gÏÖ\­;&Bó§ñÜ¹sîîî|>?//ÃálÚ´ÉßßŸÇã¥¥¥544¸¹¹ÕÕÕ…‡‡;880ŒM›6-X°€Ífgee………™››ïÚµ+--­¼¼ÜÌÌ¬¸¸xäÈ‘.€»wïYXtdì!djjæìì|ùòåğğp‹åíí½{÷n¡Pèèè8nÜ8m,;Tš››oŞ¼ÙÏÏÏÂÂ‚ ˆ´´´°°°µk×FFFr¹ÜÌÌÌÂÂÂU«VI$’ôôt.—«9étº±±1 (Šøøx+++ŠŠ
+//¯‚‚‚ĞĞPµZÍápbbbvìØáíí=dÈææf‹Åd2Õj5—Ëõòòò÷÷<x°@ Ø¾}û;w
+
+
+?~ìççG§¿ZÍoJ¥ÒÙÙùøñãÿBÙ+öÆİ£R©ètºfYüßíŸ±Çÿ–Ä¾7(a¶    IEND®B`‚Yimage/png_3http://validator.w3.org/images/opensource-55x48.pngOmbplist00ÔklX$versionX$objectsY$archiverT$top † ¯!"()012LMNOPQRSTUVWXYZ[\]^_`defU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€ €€€Ó#$%&'WNS.base[NS.relative€ €€_3http://validator.w3.org/images/opensource-55x48.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A·ü»±?8øÈÓ345@KWNS.keysZNS.objectsª6789:;<=>?€	€
+€€€€€€€€ªABCDEFGHIJ€€€€€€€€€€€VServerWExpiresZConnection]Last-Modified\Content-Type]Accept-RangesTDate^Content-Length]Cache-ControlTEtagXApache/2_Fri, 01 Nov 2013 20:38:09 GMTUclose_Mon, 12 Mar 2012 15:34:29 GMTYimage/pngUbytes_Wed, 02 Oct 2013 20:38:09 GMTT3269_max-age=2592000_"18585-cc5-4bb0d7a612b40"Ò*+ab_NSMutableDictionary£ac/\NSDictionaryÅYimage/pngÒ*+gh_NSHTTPURLResponse£ij/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑmn_WebResourceResponse€    # - 2 7 [ a |  ƒ † ‰ Œ  “ š    £ ¦ © « ­ ¯ ± ³ µ · ¹ » ½ ¿ Á È Ğ Ü Ş à â(17:@IRT[cny{}ƒ…‡‰‹˜šœ ¢¤¦¨ª¬®µ½ÈÖãñö!AGgqw—œ®ÊÏåéöù 4BTWm             o              oÔ'()*OY‰PNG
+
+   IHDR   P      D¸½   tEXtSoftware Adobe ImageReadyqÉe<   BPLTE Zœÿÿÿ   »ÓåD†¶w§Êˆ²Ñ3{°e£ÌŞëÀÖç€­ÎfœÄ"p©·Ô™½×İéòU‘½0y¯`˜Á o¨îôø¸»Ü   ­IDATxÚÌ“ëÂ0…a@iÕy÷ı_ÕB;]œı‡‰$¥œCú5,LÁ††!0~	¼Ş}ÉÉÀİŞ²"D©UÒ¾¨K‰LuHßå8û—5 ±¯t`jÂ‰©æi©“ô¶Û_ •w¶‘õ¤¤¨®€¦Ü[®l€@ˆÚ
+öSÂ[ ğq;òñÖöù!½¹PĞoi@Ä—×û+cğlä_ßa 0ú_§  Ì§+F³    IEND®B`‚Yimage/png_,http://www.w3.org/QA/Tools/I_heart_validatorObplist00ÔwxX$versionX$objectsY$archiverT$top † ¯'"()012RSTUVWXYZ[\]^_`abcdefghijklpqrU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €$€&€€%€Ó#$%&'WNS.base[NS.relative€ €€_,http://www.w3.org/QA/Tools/I_heart_validatorÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A·ü«¥_5]ÈÓ345CQWNS.keysZNS.objects­6789:;<=>?@AB€	€
+€€€€€€€€€€€­DEFGHIJKLMNOP€€€€€€€€€€€ €!€"€#TVarySP3P\Content-TypeVServerWExpiresSTCN]Cache-ControlTDate^Content-Length_Content-LocationTEtag]Accept-Ranges]Last-Modified_negotiate,accept_1policyref="http://www.w3.org/2001/05/P3P/p3p.xml"_image/png; qs=0.7XApache/2_Fri, 01 Nov 2013 19:29:41 GMTVchoice_max-age=2592000_Wed, 02 Oct 2013 19:29:41 GMTS345_I_heart_validator.png_!"159-45da2b06f1e40;4e63871a46980"Ubytes_Tue, 09 Dec 2008 20:07:13 GMTÒ*+mn_NSMutableDictionary£mo/\NSDictionaryYYimage/pngÒ*+st_NSHTTPURLResponse£uv/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑyz_WebResourceResponse€    # - 2 7 a g ‚ … ‰ Œ  ’ – ™   £ ¦ © ¬ ¯ ± ³ µ · ¹ » ½ ¿ Á Ã Å Ç Î Ö â ä æ è'069?HQSZbm{}ƒ…‡‰‹‘“•£¥§©«­¯±³µ·¹»½¿ÄÈÕÜäèöû
+"0>Q…™¢ÂÉÛûÿ;Aaf|€šŸ³·ËÙëî             {              Õ,-./012_WebResourceTextEncodingName_WebResourceFrameNameOL<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>
+            [Valid]
+            Markup Validation of upload://Form Submission - W3C Markup Validator</title>
+        <link rel="icon" href="data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%10%00%00%00%10%08%02%00%00%00%90%91h6%00%00%00%19IDAT(%91c%0C%DD%10%C5%40%0A%60%22I%F5%A8%86Q%0DCJ%03%00dy%01%7F%0C%9F0%7D%00%00%00%00IEND%AEB%60%82" type="image/png">
+    <link rev="made" href="mailto:www-validator@w3.org">
+    <link rev="start" href="./" title="Home Page">
+    <style type="text/css" media="all">@import "./style/base";
+            @import "./style/results";</style>
+    <meta name="keywords" content="HTML, HyperText Markup Language, Validation,
+      W3C Markup Validation Service">
+    <meta name="description" content="W3C's easy-to-use
+      markup validation service, based on SGML and XML parsers.">
+  </head>
+  <body>
+    
+    <div id="banner">
+     <h1 id="title">
+       <a href="http://www.w3.org/"><img alt="W3C" width="110" height="61" id="logo" src="./images/w3c.png"></a>
+ 			<a href="./"><span>Markup Validation Service</span></a>
+       </h1>
+       <p id="tagline">Check the markup (HTML, XHTML, â€¦) of Web documents</p>
+    </div>
+
+
+<div id="results_container">
+
+
+
+        <ul class="navbar" id="jumpbar">
+                <li><strong>Jump To:</strong></li>
+                
+                        <li><a href="#preparse_warnings">Notes and Potential Issues</a></li>
+                
+                
+          
+                  <li><a title="Information on validation, Icons" href="#congrats">Congratulations Â· Icons</a></li>
+
+
+  
+  
+  
+        </ul>
+
+<!-- valid/invalid header and revalidation table -->
+
+  
+    <h2 class="valid">This document was successfully checked as 
+     HTML5!</h2>
+  
+  
+
+
+
+
+  
+    <form id="form" method="post" enctype="multipart/form-data" action="check">
+  
+
+  <table class="header">
+    <tbody><tr>
+    <th>Result:</th>
+    
+    <td colspan="2" class="valid">
+      
+        Passed, <strong class="has_warnings">2 warning(s)</strong>
+      
+    
+    </td>
+    </tr>
+    <tr>
+
+  
+          <th><label title="Uploaded source of your Document" for="fragment">Source</label>:</th><td colspan="2"><textarea id="fragment" name="fragment" rows="12" cols="80">&lt;!DOCTYPE html&gt;
+	&lt;html lang="en"&gt;
+		&lt;head&gt;
+		&lt;title&gt;Meister - Web Design Standards V3&lt;/title&gt;
+		&lt;meta charset="utf-8"&gt;
+		
+		&lt;!-- Scripts Here --&gt;
+		&lt;!--[if It IE 9]&gt;
+		&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;
+		&lt;/script&gt;
+		&lt;![endif]--&gt;
+		
+		&lt;!-- Links Here --&gt;
+		&lt;!--&lt;link href="css/main.css" rel="stylesheet" type="text/css"/&gt;--&gt;
+	
+	&lt;/head&gt;
+	    	&lt;body&gt;
+	    	&lt;header&gt;
+			&lt;div id="sitebranding"&gt;
+				&lt;h1&gt;ICM.com&lt;/h1&gt;
+			&lt;/div&gt;
+			&lt;div id="tagline"&gt;
+				&lt;p&gt;Import Convention Models of North America &amp;amp; Canada - Tuner, E3 and Magic Exhibit Models!
+				&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;nav&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;li&gt;
+					&lt;li&gt;&lt;a href="index.html"&gt;About Us&lt;/a&gt;&lt;li&gt;
+					&lt;li&gt;&lt;a href="index.html"&gt;Club Events&lt;/a&gt;&lt;li&gt;
+					&lt;li&gt;&lt;a href="index.html"&gt;Contact Us&lt;/a&gt;&lt;li&gt;
+					&lt;li&gt;&lt;a href="index.html"&gt;Image Gallery&lt;/a&gt;&lt;li&gt;
+				&lt;/ul&gt;
+			&lt;/nav&gt;	
+			&lt;/header&gt;
+			
+		&lt;section&gt;
+			&lt;div id="bodycontent"&gt;
+			
+			&lt;h1&gt;Need a Model? Your in luck, we've got em!&lt;/h1&gt;
+			
+			&lt;article&gt;    
+				&lt;h4&gt;Which models are appropriate for your Company's Exhibit?&lt;/h4&gt;
+				&lt;img src="images/model.jpg" width="395" height="275" alt="model"&gt;
+				&lt;h4&gt;&lt;i&gt;&lt;q&gt;You might think all car show girls are the same.&lt;/q&gt;&lt;/i&gt;&lt;/h4&gt;
+				 &lt;p&gt;That is simply not the case.Depending on your target market, you can select a model
+				    that will match your product lines.For example, let's say your company offers aftermarket parts for exotic cars. 
+					Which would you choose: an exotic beauty or an All-American girl? 
+					While the All-American girl might work, the exotic beauty would be a better fit for your
+					target market. This is just an example of how you can pick the right model for your products.
+
+					If you want to bring in girls for your next car show, the best solution is to find a 
+					reputable agency that has the talent you need. It is important to work with an agency 
+					that have plenty of &lt;b&gt;girls with experience at car shows&lt;/b&gt;. They will give you the intelligent 
+					minds and pretty faces you want to help showcase your company and its products. Bring out 
+					the girls when you want to grab attention and bring visitors into your car show exhibit.&lt;/p&gt;
+			&lt;/article&gt;
+			&lt;/div&gt;
+		&lt;/section&gt;
+			
+			
+		 &lt;aside&gt;
+		 	&lt;h1&gt;Eye Candy&lt;/h1&gt;
+				&lt;p&gt;Drawing attention to your exhibit is the perfect time to bring on 
+				ICM eye candy. You want your demographic to come and see your products
+				or services. Our models pretty faces &amp;amp;silhouettes will surely bring them in for
+				a closer look at what you have to offer!
+				The attention your exhibit gets is exactly what you need in a large car show. 
+				It will help establish your company and get your brand on the map. That is 
+				why making the best presentation possible is so important in such a venue.
+				&lt;span&gt;ICM Staff&lt;/span&gt;&lt;/p&gt;
+		 &lt;/aside&gt;
+
+			&lt;footer&gt;
+				&lt;p&gt;All rights reserved &amp;copy; ICM | Import Convention Models &amp;reg; &amp;trade;&lt;/p&gt; 
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;li&gt;
+						&lt;li&gt;&lt;a href="index.html"&gt;About Us&lt;/a&gt;&lt;li&gt;
+						&lt;li&gt;&lt;a href="index.html"&gt;Club Events&lt;/a&gt;&lt;li&gt;
+						&lt;li&gt;&lt;a href="index.html"&gt;Contact Us&lt;/a&gt;&lt;li&gt;
+						&lt;li&gt;&lt;a href="index.html"&gt;Image Gallery&lt;/a&gt;&lt;li&gt;
+					&lt;/ul&gt;
+					
+					&lt;p&gt;
+					&lt;a href="http://www.w3.org/QA/Tools/Donate"&gt;&lt;img src="http://www.w3.org/QA/Tools/I_heart_validator_lg" alt="Validators Donation Program logo" height="46" class="w3c-include-sponsor-img"&gt;&lt;/a&gt;
+					&lt;a href="http://jigsaw.w3.org/css-validator/check/referer"&gt;
+    				&lt;img style="border:0; width:88px; height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /&gt;&lt;/a&gt;
+    				&lt;/p&gt;
+				&lt;/footer&gt;
+
+			&lt;/body&gt;
+
+&lt;/html&gt;
+</textarea></td>
+      
+
+    </tr>
+
+  
+
+  <tr>
+    <th><label title="Character Encoding" for="charset">Encoding</label>:</th>
+    <td>utf-8</td><td><select name="charset" id="charset">
+  <option value="(detect automatically)">(detect automatically)</option>
+  <option value="utf-8">utf-8 (Unicode, worldwide)</option>
+  <option value="utf-16">utf-16 (Unicode, worldwide)</option>
+  <option value="iso-8859-1">iso-8859-1 (Western Europe)</option>
+  <option value="iso-8859-2">iso-8859-2 (Central Europe)</option>
+  <option value="iso-8859-3">iso-8859-3 (Southern Europe)</option>
+  <option value="iso-8859-4">iso-8859-4 (North European)</option>
+  <option value="iso-8859-5">iso-8859-5 (Cyrillic)</option>
+  <option value="iso-8859-6-i">iso-8859-6-i (Arabic)</option>
+  <option value="iso-8859-7">iso-8859-7 (Greek)</option>
+  <option value="iso-8859-8">iso-8859-8 (Hebrew, visual)</option>
+  <option value="iso-8859-8-i">iso-8859-8-i (Hebrew, logical)</option>
+  <option value="iso-8859-9">iso-8859-9 (Turkish)</option>
+  <option value="iso-8859-10">iso-8859-10 (Latin 6)</option>
+  <option value="iso-8859-11">iso-8859-11 (Latin/Thai)</option>
+  <option value="iso-8859-13">iso-8859-13 (Latin 7, Baltic Rim)</option>
+  <option value="iso-8859-14">iso-8859-14 (Latin 8, Celtic)</option>
+  <option value="iso-8859-15">iso-8859-15 (Latin 9)</option>
+  <option value="iso-8859-16">iso-8859-16 (Latin 10)</option>
+  <option value="us-ascii">us-ascii (basic English)</option>
+  <option value="euc-jp">euc-jp (Japanese, Unix)</option>
+  <option value="shift_jis">shift_jis (Japanese, Win/Mac)</option>
+  <option value="iso-2022-jp">iso-2022-jp (Japanese, email)</option>
+  <option value="euc-kr">euc-kr (Korean)</option>
+  <option value="gb2312">gb2312 (Chinese, simplified)</option>
+  <option value="gb18030">gb18030 (Chinese, simplified)</option>
+  <option value="big5">big5 (Chinese, traditional)</option>
+  <option value="big5-HKSCS">Big5-HKSCS (Chinese, Hong Kong)</option>
+  <option value="tis-620">tis-620 (Thai)</option>
+  <option value="koi8-r">koi8-r (Russian)</option>
+  <option value="koi8-u">koi8-u (Ukrainian)</option>
+  <option value="iso-ir-111">iso-ir-111 (Cyrillic KOI-8)</option>  
+  <option value="macintosh">macintosh (MacRoman)</option>
+  <option value="windows-1250">windows-1250 (Central Europe)</option>
+  <option value="windows-1251">windows-1251 (Cyrillic)</option>
+  <option value="windows-1252">windows-1252 (Western Europe)</option>
+  <option value="windows-1253">windows-1253 (Greek)</option>
+  <option value="windows-1254">windows-1254 (Turkish)</option>
+  <option value="windows-1255">windows-1255 (Hebrew)</option>
+  <option value="windows-1256">windows-1256 (Arabic)</option>
+  <option value="windows-1257">windows-1257 (Baltic Rim)</option>
+</select>
+</td>
+  </tr>
+
+
+  <tr>
+    <th><label for="doctype" title="Document Type">Doctype</label>:</th>
+    <td>HTML5</td><td><select id="doctype" name="doctype">
+  <option value="Inline">(detect automatically)</option>
+  <option value="HTML5">HTML5 (experimental)</option>
+  <option value="XHTML 1.0 Strict">XHTML 1.0 Strict</option>
+  <option value="XHTML 1.0 Transitional">XHTML 1.0 Transitional</option>
+  <option value="XHTML 1.0 Frameset">XHTML 1.0 Frameset</option>
+  <option value="HTML 4.01 Strict">HTML 4.01 Strict</option>
+  <option value="HTML 4.01 Transitional">HTML 4.01 Transitional</option>
+  <option value="HTML 4.01 Frameset">HTML 4.01 Frameset</option>
+  <option value="HTML 4.01 + RDFa 1.1">HTML 4.01 + RDFa 1.1</option>
+  <option value="HTML 3.2">HTML 3.2</option>
+  <option value="HTML 2.0">HTML 2.0</option>
+  <option value="ISO/IEC 15445:2000 (&quot;ISO HTML&quot;)">ISO/IEC 15445:2000 ("ISO HTML")</option>
+  <option value="XHTML 1.1">XHTML 1.1</option>
+  <option value="XHTML + RDFa">XHTML + RDFa</option>
+  <option value="XHTML Basic 1.0">XHTML Basic 1.0</option>
+  <option value="XHTML Basic 1.1">XHTML Basic 1.1</option>
+  <option value="XHTML Mobile Profile 1.2">XHTML Mobile Profile 1.2</option>
+  <option value="XHTML-Print 1.0">XHTML-Print 1.0</option>
+  <option value="XHTML 1.1 plus MathML 2.0">XHTML 1.1 plus MathML 2.0</option> 
+  <option value="XHTML 1.1 plus MathML 2.0 plus SVG 1.1">XHTML 1.1 plus MathML 2.0 plus SVG 1.1</option> 
+  <option value="MathML 2.0">MathML 2.0</option>
+  <option value="SVG 1.0">SVG 1.0</option>
+  <option value="SVG 1.1">SVG 1.1</option>
+  <option value="SVG 1.1 Tiny">SVG 1.1 Tiny</option>
+  <option value="SVG 1.1 Basic">SVG 1.1 Basic</option>
+  <option value="SMIL 1.0">SMIL 1.0</option>
+  <option value="SMIL 2.0">SMIL 2.0</option>
+</select>
+</td>
+  </tr>
+
+
+  <tr>
+    <th>Root Element:</th>
+    <td colspan="2">html</td>
+  </tr>
+
+
+
+  </tbody></table>
+
+<div id="w3c-include">
+    <script type="text/javascript" src="about:blank"></script>
+</div>
+
+        <fieldset id="revalidate_opts">
+                 <legend>Options</legend>
+
+    <table class="header">
+      <tbody><tr>
+        <td><input type="checkbox" value="1" id="ss" name="ss"><label title="Show Page Source" for="ss">Show&nbsp;Source</label></td>
+              <td><input type="checkbox" value="1" id="outline" name="outline"><label title="Show an Outline of the document" for="outline">Show&nbsp;Outline</label></td>
+                <td><input type="radio" name="group" id="group_no" value="0" checked="checked"><label for="group_no">List Messages Sequentially</label> 
+                        <input type="radio" name="group" id="group_yes" value="1"><label for="group_yes">Group Error Messages by Type</label></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" value="1" id="No200" name="No200"><label title="Validate also pages for which the HTTP status code indicates an error" for="No200">Validate&nbsp;error&nbsp;pages</label></td>
+              <td><input type="checkbox" value="1" id="verbose" name="verbose"><label title="Show Verbose Output" for="verbose">Verbose&nbsp;Output</label></td>
+    		<td><input id="st" name="st" type="checkbox" value="1"><label for="st">Clean up Markup with HTML-Tidy</label></td>
+            </tr>
+
+    </tbody></table>
+        <p class="moreinfo">
+          <a href="docs/users.html#Options">Help</a> on the options is available.
+        </p>
+    <div id="revalidate_button" class="submit_button">
+ <input type="hidden" value="W3C_Validator/1.3 http://validator.w3.org/services" id="user-agent" name="user-agent">
+      <input type="submit" value="Revalidate" title="Validate this document again">
+    </div>
+  </fieldset>
+</form>
+
+
+
+                
+                  <div id="result">
+
+        
+          <h3 id="preparse_warnings">Notes and Potential Issues</h3>
+<p>The following notes and warnings highlight missing or conflicting information which caused the validator to perform some guesswork prior to validation, or other things affecting the output below. If the guess or fallback is incorrect, it could make validation results entirely incoherent. It is <em>highly recommended</em> 
+to check these potential issues, and, if necessary, fix them and re-validate the document.</p>
+<ol id="warnings">
+
+
+  <li class="msg_warn" id="W00">
+      <p><span class="err_type"><img src="images/info_icons/info.png" alt="Info" title="Info"></span> <span class="msg"> Using experimental feature:
+          <em>HTML5 Conformance Checker</em>.</span></p>
+    <p>The validator checked your document with an experimental feature:
+        <em>HTML5 Conformance Checker</em>. This feature has been 
+        made available for your convenience, but be aware that it may be unreliable, or not perfectly
+        up to date with the latest development of some cutting-edge technologies. If you find any issues
+        with this feature, please <a href="feedback.html">report them</a>. Thank you.
+    </p>
+  </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li class="msg_info" id="W28"><p><span class="err_type"><img src="images/info_icons/info.png" alt="Info" title="Info"></span> <span class="msg">Using Direct Input mode: UTF-8 character encoding assumed</span></p>
+  
+    <p>Unlike the â€œby URIâ€ and â€œby File Uploadâ€ modes, the â€œDirect Inputâ€ mode of the validator provides validated content in the form of characters pasted or typed in the validator's form field. This will automatically make the data UTF-8, and therefore the validator does not need to determine the character encoding of your document, and will ignore any charset information specified.</p>
+    <p>If you notice a discrepancy in detected character encoding between the â€œDirect Inputâ€ mode and other validator modes, this is likely to be the reason. It is neither a bug in the validator, nor in your document.</p>
+  </li>
+
+
+
+
+
+
+
+
+</ol><!-- End of "warnings". -->
+
+        
+
+
+
+<h3 id="congrats">Congratulations</h3>
+  <p>
+
+  
+    The uploaded document
+    
+
+
+    was successfully checked as 
+    
+    HTML5.  
+    
+    This means that the resource in question identified itself as
+    "HTML5" and that we successfully
+    performed a formal validation of it.
+    
+
+    The parser implementations we used for this check are based on
+    
+    
+    <a href="http://validator.nu/">validator.nu</a> (HTML5).
+    
+  </p>
+
+
+  
+
+<h4>Validating CSS Style Sheets</h4>
+  <p>
+    If you use <a href="http://www.w3.org/Style/CSS/">CSS</a> in your document,
+    you can 
+
+  
+check it
+  
+
+    using the W3C
+    <a href="http://jigsaw.w3.org/css-validator/">CSS Validation Service</a>.
+  </p>
+
+
+<p class="backtop"><a href="#jumpbar">â†‘ Top</a></p>
+
+</div><!-- end of "result" -->
+
+                
+
+      
+
+      
+
+      
+
+</div><!-- results_container-->
+
+<ul class="navbar" id="menu">
+    <li><a href="./" accesskey="1" title="Go to the Home Page for The W3C Markup Validation Service">Home</a><span> | </span></li>
+    <li><a href="./about.html" title="Information About this Service">About...</a><span> | </span></li>
+
+    <li><a href="./whatsnew.html" title="The changes made to this service recently">News</a><span> | </span></li>
+    <li><a href="./docs/" accesskey="3" title="Documentation for this Service">Docs</a><span> | </span></li>
+	<li><a href="./docs/help.html" title="Help and answers to frequently asked questions">Help&nbsp;&amp;&nbsp;<acronym title="Frequently Asked Questions">FAQ</acronym></a><span> | </span></li>
+    <li><a href="./feedback.html" accesskey="4" title="How to provide feedback on this service">Feedback</a><span> | </span></li>
+    <li><a href="./contribute.html" title="How to contribute to the validator project">Contribute</a><span> | </span></li>
+</ul>
+<div id="footer">
+
+	<p id="activity_logos">
+		<a href="http://www.w3.org/Status" title="W3C's Open Source, bringing you free Web quality tools and more"><img src="http://www.w3.org/Icons/WWW/w3c_home_nb" alt="W3C" width="72" height="47"><img src="./images/opensource-55x48.png" alt="Open-Source" title="We are building certified Open Source/Free Software. - see www.opensource.org" width="55" height="48"></a>
+	</p>
+
+		<p id="support_logo">
+			<a href="http://www.w3.org/QA/Tools/Donate">
+			<img src="http://www.w3.org/QA/Tools/I_heart_validator" alt="I heart Validator logo" title=" Validators Donation Program" width="80" height="15">
+			</a>
+		</p>
+    <p id="version_info">
+      This service runs the W3C Markup Validator, <a href="whatsnew.html#v13"><abbr title="version">v</abbr>1.3</a>.
+    </p>
+
+		<p class="copyright">
+			<a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> Â© 1994-2012
+			<a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a>Â®
+
+			(<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
+			<a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+			<a href="http://www.keio.ac.jp/">Keio</a>),
+			All Rights Reserved.
+			W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+			<a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>,
+			<a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a>
+
+			and <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-software">software licensing</a>
+
+			rules apply. Your interactions with this site are in accordance
+			with our <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Public">public</a> and
+			<a href="http://www.w3.org/Consortium/Legal/privacy-statement#Members">Member</a> privacy
+			statements.
+		</p>
+</div><!-- footer -->
+	
+
+
+
+
+
+</body></html>Ytext/htmlUUTF-8P_http://validator.w3.org/check    1 9 B T j y 3ê3ó49k9t\±\º\âb;bDjj!jJn®n·vvvFz¶z¿ƒƒƒEˆ[ˆd•-•7•m™Ş™ç›D›N›}  ¨ Æ İìèìòìøìù             3              í
