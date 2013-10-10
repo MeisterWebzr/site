@@ -28,11 +28,11 @@ p{
 	font-size: 1.07692307692308em; /* 14px */
 	
 }
-h1, h3{
+h1, h3,{
 	font-family: 'Raleway Dots', Arial, cursive;
 	font-weight: normal;
 	color: Orange;
-	border: 2px solid orange;
+	border: 1px dotted white;
 	border-top-right-radius: 40px;
 	border-bottom-right-radius:5px;
 	text-align: center;
@@ -42,6 +42,7 @@ h1{
 	background: #3fa9f5;
 	width: 30%;
 	font-family: 'Montserrat', sans-serif;
+	font-style: uppercase;
 	padding-top: 2px;
 }
 
@@ -49,18 +50,18 @@ h4{
 	width: 97%;
 	background: orange;
 	color: #fff;
-	margin: 2px;
+	margin-left; 5px;
 	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-bottom-left-radius:5px;
 }
 
 h5{
 	font-family: 'Cinzel Decorative', cursive;
 	font-weight: normal;
-	color: #ffffff;
+	color: weight;
 }
 header{
-	/*border: 1px dotted white;*/
+	border: 1px dotted white;
 	display: block; /* Only for IE8 or less */
 	height: 85px;
 }
@@ -164,8 +165,7 @@ nav ul{
 	width: 97%;
 	margin: 5px;
 	padding: 5px;
-	border: 1px solid #3fa9f5;
-	background: #3fa9f5;
+	border: 1px dotted white;
 	
 }
 
@@ -181,7 +181,6 @@ nav ul{
 .eye{
 	position: relative;
 	right: 10px;
-	top: -10px;
 	height: 25px;
 	width: 30%;
 	background: #3fa9f5;
@@ -194,6 +193,7 @@ nav ul{
 	-khtml-border-radius: 10px;
 	text-align: center;
 	float: right;
+	clear:both;
 }
 
 aside{
@@ -220,11 +220,8 @@ aside blockquote{
 .cta2{
 	background-color: orange;
 	width: 97%;
-	/*border-top-left-radius: 40px;
-	border-bottom-left-radius:40px;*/
-	margin: 2px;
-	padding:5px;
-	clear: left;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius:40px;
 }
 
 .industries{
@@ -245,6 +242,7 @@ aside blockquote{
 	position: relative;
 	left: -45px;
 	list-style-type: none;
+	font-size: normal;
 	background: white;
 	margin: 5px;
 	padding: 5px;
@@ -254,9 +252,8 @@ aside blockquote{
 
 	a:hover{
 	text-decoration: none;
+	color: white;
 	background-color: orange;
-	height: 25px;
-	
 }
 
 /*---------------Sections---------------*/
@@ -279,38 +276,30 @@ article{
 .clients{
 	width: 100%;
 	height: 450px;
-	/*border: 1px dotted red;*/
-	margin-top: 1em;
-	padding-top: 1em;
+	border: 1px dotted red;
+	margin-top: 40px;
 	padding-bottom: 15px;
-		
-}
-
-#brands{
 	opacity: .5;
+	
 }
-
 
 /*------------Gallery-------------------*/
 .gallery{
-	margin-top: 1em;
-	padding-top:1em;
 	width: 100%;
 	height: 720px;
-	/*border: 1px dotted red;*/
+	border: 1px dotted red;
+	margin-top: 5px;
 	margin-bottom: 5px;
-	overflow: hidden;
-	
 	
 }
 
 .photogallery{
 	display: inline;
-	/*border: 1px dashed white;*/
+	border: 1px dashed white;
 	list-style-type: none;
 	width: 97%;
 	margin: 5px auto;
-	padding: 10px 0 0;
+	padding: 10px auto;
 	overflow: hidden;
 	clear:both;
 }
@@ -331,7 +320,7 @@ article{
 .contact{
 	width: 100%;
 	height: 450px;
-	/*border: 1px dotted red;*/
+	border: 1px dotted red;
 	margin-top: 40px;
 	padding-bottom: 5px;
 	
@@ -348,7 +337,7 @@ article{
 
 
 footer{
-		border-bottom: 3px solid orange;
+		border-bottom: 3px solid #000000;
 		display: block; /* Only for IE8 or less */
 		font-size: 0.923em; /*12px*/
 		width: 100%;
