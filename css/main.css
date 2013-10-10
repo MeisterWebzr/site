@@ -1,57 +1,70 @@
+/*
+CSS for International Convention Models site
+*/
+
 html{
-	margin-left: 180px;
-	padding: 1.92307692em; /* 25px; */
-	margin-top: 0.38461538em;/* 5px;*/
-	padding-top: 0.38461538em;/* 5px;*/
+	/*margin-left: 180px;*/
+	/*padding: 1.92307692em; /* 25px; */
+	/*margin-top: 0.38461538em;/* 5px;*/
+	/*padding-top: 0.38461538em;/* 5px;*/
 	background: black;
 	background-repeat:repeat-y;
    	background-image:url('../images/background.jpg');
-   	background-position: top left;
+   	background-position: center center;
 }
+
 
 body{
 	width: 960px;
-	height: auto;
-	margin: 10px;
-	padding: 10px;
+	margin: 0 auto;
+	/*margin: 10px;*/
+	/*padding: 10px;*/
 	/*border: 1px dotted orange;*/
     text-align: justify;
     /*background-color: black;*/
-    
-	
 	
 }
 
 p{	
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Arial', sans-serif;
 	color: #ffffff;
 	font-size: 1.07692307692308em; /* 14px */
 	
 }
-h1, h3{
+h3{
 	font-family: 'Raleway Dots', Arial, cursive;
-	font-weight: normal;
 	color: Orange;
-	border: 2px solid orange;
+	border: 1px solid orange;
 	border-top-right-radius: 40px;
 	border-bottom-right-radius:5px;
 	text-align: center;
+	text-shadow: 0.23076923em 0.15384615em 0.23076923em #ffffff; /* 3px 2px 3px #333333;*/
+    -ms-text-shadow: 0.23076923em 0.15384615em 0.23076923em #ffffff; /* 3px 2px 3px #333333;*/
+    -moz-text-shadow: 0.23076923em 0.15384615em 0.23076923em #ffffff; /* 3px 2px 3px #333333;*/
+    -o-text-shadow: 0.23076923em 0.15384615em 0.23076923em #ffffff; /* 3px 2px 3px #333333;*/
+    -web-text-shadow: 0.23076923em 0.15384615em 0.23076923em #ffffff; /* 3px 2px 3px #333333;*/
+    -khtml-text-shadow: 0.23076923em 0.15384615em 0.23076923em #ffffff; /* 3px 2px 3px #333333;*/
 	}
 	
 h1{
 	background: #3fa9f5;
+	color: orange;
 	width: 30%;
 	font-family: 'Montserrat', sans-serif;
 	padding-top: 2px;
+	border: 1px solid orange;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius:5px;
+	text-align: center;
 }
 
 h4{
 	width: 97%;
-	background: orange;
 	color: #fff;
 	margin: 2px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
+	
 }
 
 h5{
@@ -66,12 +79,13 @@ header{
 }
 
 
-#tagline{
-	position: absolute;
+.tagline{
+	position: relative;
 	color: #fff;
 	top: 10px;
 	padding: 0.38461538em;/* 5px;*/
 	margin: 0.38461538em;/* 5px;*/
+	clear: both;
 }
 
 .maintag{
@@ -107,12 +121,6 @@ nav{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     text-align: center;
-    text-shadow: 0.23076923em 0.15384615em 0.23076923em #333333; /* 3px 2px 3px #333333;*/
-    -ms-text-shadow: 0.23076923em 0.15384615em 0.23076923em #333333; /* 3px 2px 3px #333333;*/
-    -moz-text-shadow: 0.23076923em 0.15384615em 0.23076923em #333333; /* 3px 2px 3px #333333;*/
-    -o-text-shadow: 0.23076923em 0.15384615em 0.23076923em #333333; /* 3px 2px 3px #333333;*/
-    -web-text-shadow: 0.23076923em 0.15384615em 0.23076923em #333333; /* 3px 2px 3px #333333;*/
-    -khtml-text-shadow: 0.23076923em 0.15384615em 0.23076923em #333333; /* 3px 2px 3px #333333;*/
     /*background-color: #3fa9f5;*/
 	/*border-radius: 0.61538462em; /* 8px; */
 	-ms-border-radius: 0.61538462em; /* 8px; */
@@ -183,11 +191,16 @@ nav ul{
 	right: 10px;
 	top: -10px;
 	height: 25px;
-	width: 30%;
+	width: 31%;
 	background: #3fa9f5;
+	background-image: linear-gradient(bottom, #BDBEBF 18%, #F0F0F0 65%);
+	background-image: -o-linear-gradient(bottom, #BDBEBF 18%, #F0F0F0 65%);
+	background-image: -moz-linear-gradient(bottom, #BDBEBF 18%, #F0F0F0 65%);
+	background-image: -webkit-linear-gradient(bottom, #BDBEBF 18%, #F0F0F0 65%);
+	background-image: -ms-linear-gradient(bottom, #BDBEBF 18%, #F0F0F0 65%);
 	padding: 0.30769230769231em;/* 4px;*/
 	margin: 0.30769230769231em;/* 4px;*/
-	border-radius: 10px;
+	border-radius: 12px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -219,6 +232,7 @@ aside blockquote{
 
 .cta2{
 	background-color: orange;
+	border: 1px solid grey;
 	width: 97%;
 	/*border-top-left-radius: 40px;
 	border-bottom-left-radius:40px;*/
@@ -266,15 +280,28 @@ aside blockquote{
 	width: 100%;
 	height: 780px;
 	/*border: 1px dotted red;*/
-	margin-top: 1em;
+	margin-top: 4em;
 }
 
 article{
 	width: 95%;
-	columns:220px 3;
-	-webkit-columns:220px 3; /* Safari and Chrome */
-	-moz-columns:220px 3; /* Firefox */
+	columns:240px 3;
+	-webkit-columns:240px 3; /* Safari and Chrome */
+	-moz-columns:240px 3; /* Firefox */
+	-khtml-columns:240px 3;
+	margin: 5px;
+	text-align: center;
+	
 }
+
+.articleeye{
+	background: #3fa9f5;
+	margin: 0 auto;
+	color: white;
+	border: 1px solid grey;
+	
+}
+
 
 .clients{
 	width: 100%;
@@ -283,6 +310,7 @@ article{
 	margin-top: 1em;
 	padding-top: 1em;
 	padding-bottom: 15px;
+	
 		
 }
 
