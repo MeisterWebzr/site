@@ -37,7 +37,7 @@ h3{
 	font-size: .8125em; /*13px*/
 	color: Orange;
 	border-top-right-radius: 40px;
-	border-bottom-right-radius:5px;
+	border-bottom-right-radius:0.313em; 
 	padding-top: .5em;
 	padding-bottom: .2em;
 	padding-left: .4em;
@@ -199,7 +199,7 @@ nav ul{
 
 .cta2{
 	background-color: orange;
-	border: 1px solid grey;
+	border: 0.313em solid grey; /*1px*/
 	width: 62%;
 	font-size: 130%;
 	margin: 0.125em; /*2px;*/
@@ -247,7 +247,7 @@ article{
 	padding: .3em;
 	color: grey;
 	text-transform:uppercase;
-	border: 1px solid grey;
+	border: 0.063em solid grey; /*1px*/
 	
 }
 
@@ -294,10 +294,9 @@ brands{
 
 .photogallery{
 	display: inline;
-	/*border: 1px dashed white;*/
 	list-style-type: none;
 	width: 100%;
-	margin: 5px auto;
+	margin: 0.313em auto; /*5px*/
 	padding: 0.38461538em 0.38461538em 0.38461538em; /* 5px;*/
 	overflow: hidden;
 	clear:both;
@@ -360,7 +359,7 @@ brands{
 
 
 .rights{
-	border: 1px dotted white;
+	border: 0.063em dotted white; /*1px*/
 	margin: .5em auto;
 	padding: 0;
 	clear: both;
